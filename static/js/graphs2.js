@@ -89,3 +89,5 @@ function show_average_renewable(ndx) {
         .xAxisLabel("Continent")
         .yAxis().ticks(10);   
 }
+
+/* added changes */
