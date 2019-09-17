@@ -5,12 +5,10 @@ queue()
 function makeGraphs(error, renewableData) {
     var ndx = crossfilter(renewableData);
  
- /*  
+ 
     renewableData.forEach(function(d){
         d.renewable.total = parseInt(d.renewable.total);
     })
-    
-    */
     
     
     show_continent_selector(ndx);
@@ -46,7 +44,7 @@ function show_sources_balance(ndx) {
         .yAxis().ticks(10);
 }
 
-/*
+
 function show_average_renewable(ndx) {
     var dim = ndx.dimension(dc.pluck('continent'));
 
@@ -91,4 +89,3 @@ function show_average_renewable(ndx) {
         .xAxisLabel("Continent")
         .yAxis().ticks(10);   
 }
-*/
