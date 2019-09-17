@@ -8,8 +8,6 @@ function makeGraphs(error, renewableData) {
     })
     var ndx = crossfilter(renewableData);
     
-   
-    
     show_continent_selector(ndx);
     show_sources_balance(ndx);
     show_average_renewable(ndx);
@@ -84,7 +82,6 @@ function show_average_renewable(ndx) {
         .transitionDuration(500)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
-        .elasticY(true)
         .xAxisLabel("Continent")
         .yAxis().ticks(10);   
 }
