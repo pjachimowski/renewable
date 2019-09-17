@@ -50,7 +50,7 @@ function show_average_renewable(ndx) {
 
     function add_item(p, v) {
         p.count++;
-        p.total += y.renewable.total;
+        p.total += v.renewable.total;
         p.average = p.total;
         return p;
     }
@@ -89,5 +89,3 @@ function show_average_renewable(ndx) {
         .xAxisLabel("Continent")
         .yAxis().ticks(10);   
 }
-
-/* added changes */

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Railway:100,200,300,400,500,600,700');
+
+html, body { 
+    overflow-x: hidden; 
+}
+
+body {
+    font-family: "Railway", sans-serif;
+}
+
+/*------- navbar ---------------*/
+
+.navbar {
+    background:  #B7B7B7;
+    font-family: "Railway", sans-serif;
+}
+
+.logo {
+    background: url("../assets/logo/gaLOGO.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 130px;
+}
