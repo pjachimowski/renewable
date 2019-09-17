@@ -1,0 +1,215 @@
+country,eu,continent,renewable.total,all.sources,renewable,main.renewable,hydro,wind,biomass,solar,geothermal
+Afghanistan,n,asia,0,0,1070.9,hydro,1035.3,0.1,0,35.5,
+Albania,n,europe,100,"7,782",7783.9,hydro,7782,0,0,1.9,
+Algeria,n,africa,0.6,"70,997",430.5,solar,72,19.4,0,339.1,
+Angola,n,africa,70.3,"10,361",7282.3,hydro,7109,0,155,18.3,
+Anguilla,n,namerica,0,0,2.4,solar,0,0,0,2.4,
+Antigua and Barbuda,n,namerica,0,0,5.5,solar,0,0,0,5.5,
+Argentina,n,samerica,21.5,"147,220",31700.3,hydro,30134.8,554.1,1820.4,14.5,
+Armenia,n,europe,32.2,"7,315",2354.2,hydro,2351.2,1.8,,1.2,
+Aruba,n,namerica,0,,148.5,wind,0,130.3,8.9,9.2,
+Australia,n,oceania,14.5,"256,563",37205,hydro,15318,12199,3722,6209,1
+Austria,y,europe,74.3,"68,351",50772,hydro,42919,5235,4603,1096,
+Azerbaijan,n,asia,8.8,"24,953",2191.8,hydro,1959.3,22.8,174.5,35.3,
+Bahamas,n,namerica,0,0,1.9,solar,0,0,0,1.9,
+Bahrain,n,asia,0,"28,510",9.5,solar,0,1.2,0,8.3,
+Bangladesh,n,asia,1.8,"64,327",1183,hydro,946,5.1,7.7,224.3,
+Barbados,n,namerica,0,0,29.6,solar,,0.1,0,29.5,
+Belarus,n,europe,1.2,"33,566",392,biomass,141.9,74.8,147.2,28.1,
+Belgium,y,europe,16.6,"85,520",14168,wind,1489,5436,5276,3086,
+Belize,n,namerica,0,0,383.1,hydro,260.5,0,117.4,5.3,
+Benin,n,africa,3.2,355,11.2,solar,1,0,0,10.2,
+BES Islands,n,africa,0,0,38.2,wind,0,35.1,0,3.1,
+Bhutan,n,asia,0,0,7961.5,hydro,7959,1.8,0,0.7,
+Bolivia,n,samerica,20.6,"9,409",1936.6,hydro,1719.8,34.9,176.2,5.7,
+Bosnia and Herzegovina,n,europe,31.5,"17,767",5590.8,hydro,5586.5,0.8,36.1,13.4,
+Botswana,n,africa,0.2,"2,688",4.3,solar,0,0,0,4.3,
+British Virgin Islands,n,africa,0,0,1.6,wind,0,1.3,0,0.3,
+Brazil,n,samerica,80.4,"578,889",465579.2,biomass,380910.9,33489.1,51040.2,138.8,
+Brunei,n,asia,0,"4,270",1.1,solar,0,0,0,1.1,
+Bulgaria,y,europe,15.7,"45,277",7106,hydro,4568,1425,353,1386,
+Burkina Faso,n,asia,0,,157.1,hydro,139.5,0,2.3,15.3,
+Burundi,n,africa,0,,284,hydro,271.9,0,6.6,5.4,
+Cabo Verde,n,africa,0,,74.7,wind,0,69.1,0,5.6,
+Cambodia,n,asia,47.2,"5,594",2641.2,hydro,2568,0.3,48.3,24.7,
+Cameroon,n,africa,52.4,"8,367",4385,hydro,4372.7,0,0,12.4,
+Canada,n,namerica,65,"667,438",433597,hydro,387208,30766,12685,3031,
+Central African Republic,n,africa,0,,171.7,hydro,171.3,,,0.4,
+Chad,n,africa,0,,9.2,wind,,8.9,,0.3,
+Chile,n,samerica,43.3,"79,308",34319,wind,23274,2449,5957,2639,
+China,n,asia,24.5,"6,217,907",1522585.6,hydro,1193370,242387.7,49403.8,67874.1,143.5
+Colombia,n,samerica,62.9,"76,904",48338.9,hydro,46787.9,50.9,1419.9,80.2,
+Comoros,n,africa,0,,5,hydro,5,,,,
+Democratic Republic of the Congo,n,africa,100,"9,135",9223.9,hydro,9220.8,,,3.2,
+Republic of the Congo,n,africa,66.4,"1,753",1164.3,hydro,1163.7,,,0.6,
+Cook Islands,n,oceania,0,,4.3,solar,,,,4.3,
+Costa Rica,n,namerica,97.7,"10,881",10629.6,hydro,8025.9,1147.3,84.1,32.8,1339.5
+Ivory Coast,n,africa,15,"10,253",1534.2,hydro,1529.1,0,0,5.1,
+Croatia,y,europe,65.2,"12,820",8364,hydro,7058,1014,431,66,
+Cuba,n,namerica,4.5,"20,458",914.5,biomass,64.2,20.9,686.3,143,
+Curacao,n,namerica,25.9,884,229.1,wind,0,200,0,29.1,
+Cyprus,n,europe,8.7,"4,887",424,wind,0,226,52,146,
+Czechia,y,europe,0,0,9384,biomass,3202,497,4756,2131,
+Denmark,y,europe,60.5,"30,522",18451.1,wind,19,12771.1,4917,744,
+Djibouti,n,africa,0,0,0.5,solar,0,0,0,0.5,
+Dominica,n,namerica,0,0,37.3,hydro,36.4,0.6,0,0.4,
+Dominican Republic,n,namerica,10.4,"19,414",2020.8,hydro,1518.8,322.8,104.6,74.6,
+Ecuador,n,samerica,60.2,"27,314",16445.4,hydro,15833.8,84,489.5,38.2,
+Egypt,n,africa,8.2,"194,327",16022.8,hydro,13545,2058,315.2,104.6,
+El Salvador,n,namerica,60.7,"5,984",3632.5,hydro,1342.6,,634.6,79.8,1575.5
+Equatorial Guinea,n,namerica,0,,127,hydro,127,,,,
+Eritrea,n,africa,0.8,421,3.3,wind,,2,,1.3,
+Estonia,y,europe,12.5,"12,176",1524.1,biomass,35,594,885,10.1,
+Eswatini (Swaziland),n,africa,0,,463.7,biomass,126.7,,335.7,1.3,
+Ethiopia,n,africa,93.6,"11,226",10509.1,hydro,9674,786,28.2,20.8,
+Falkland Islands,n,africa,0,,9.3,wind,,9.2,,0.1,
+Faroe Islands,y,europe,0,,158.5,hydro,106.3,52.1,,,
+Fiji,n,oceania,0,,571.7,hydro,499.2,3.6,63.6,5.3,
+Finland,y,europe,44.2,"68,752",30407,hydro,15799,3068,11523,17,
+French Guiana,n,oceania,0,,509,hydro,443,,12,54,
+French Polynesia,n,oceania,0,,224.2,hydro,187,0.3,,36.9,
+France,y,europe,17.5,"556,184",97242,hydro,64889,21400,7134,8160,4
+Gabon,n,africa,68.4,"2,336",1597.9,hydro,1596,,,1.9,
+Gambia,n,africa,0,,3.6,solar,,0.1,,3.5,
+Georgia,n,asia,80.7,"11,574",9338.2,hydro,9329.2,9,,,
+Germany,y,europe,29,"649,119",188342,wind,26135,78598,50924,38098,175
+Ghana,n,africa,42.9,"13,023",5593.2,hydro,5561,,0.3,31,
+Greece,y,europe,27.4,"54,438",14893,hydro,5565,5146,274,3930,
+Greenland,y,europe,0,,400.9,hydro,400.9,,,,
+Grenada,n,namerica,0,,2.3,solar,,,,2.3,
+Guadeloupe,n,namerica,0,,315.1,solar,34.1,53.3,49.8,93.8,84.1
+Guam,n,oceania,0,,66.8,solar,,0.4,,66.3,
+Guatemala,n,namerica,51.7,"12,450",6434.7,hydro,3951.3,215.1,1778,201.3,289.1
+Guinea,n,oceania,0,,397.9,hydro,395.3,,,2.6,
+Guinea Bissau,n,oceania,0,,3.5,solar,,,,3.5,
+Guyana,n,oceania,0,,50.3,biomass,,0.1,40.2,10,
+Haiti,n,namerica,19.2,"1,084",208.3,hydro,207,,,1.3,
+Honduras,n,namerica,50.1,"8,783",4403.9,hydro,2353.6,582.9,575.7,891.7,
+Hungary,y,europe,10.1,"31,859",3215,biomass,259,684,2071,201,
+Iceland,n,europe,100,"18,550",18547,hydro,13470,9,,,5068
+India,n,asia,16.88,"1,550,564",261790,hydro,143743,62036,16325,39268,
+Indonesia,n,asia,15.9,"248,613",39509.1,hydro,19409.8,5.7,9364.2,73.4,10656
+Iran,n,asia,5.8,"289,094",16710.1,hydro,16419,264.3,21.8,5,
+Iraq,n,asia,6.4,"80,030",5144.7,hydro,5087.3,,,57.3,
+Ireland,y,europe,24.7,"30,418",7515,wind,973,6149,681,4,
+Israel,n,asia,2.5,"66,976",1656.3,solar,23.1,64.4,170.7,1398.1,
+Italy,y,europe,37.3,"289,768",108035.7,hydro,44257,17689,19509,22116.5,6289
+Jamaica,n,namerica,8.2,"4,230",345.2,hydro,118.7,190,23.5,13,
+Japan,n,asia,15,"1,057,976",158822,hydro,85083,9612,16847,50952,2509
+Jordan,n,asia,4.9,"19,731",959,solar,41.6,390.7,6.5,520.2,0
+Kazakhstan,n,asia,11.3,"106,627",12013.2,hydro,11620.8,262,43.6,86.8,0
+Kenya,n,africa,90.7,"9,752",8843.3,hydro,3797.5,57.1,193.9,37.2,4757.5
+Kiribati,n,oceania,0,0,4.8,solar,0,0,0,4.8,0
+Korea DPR,n,asia,75.7,"16,926",12814.9,hydro,12800,1.1,,13.9,0
+Korea Rep,n,asia,2.8,"562,603",15930,hydro,6634,1683,5781,5123,0
+Kosovo,n,europe,4.3,"5,981",257,hydro,245,3.3,0,8.7,0
+Kuwait,n,asia,0.1,"70,094",66.3,solar,0,17.5,0,48.8,0
+Kyrgyzstan,n,asia,86.7,"13,262",11497.8,hydro,11497.8,0,0,0,0
+Laos,n,asia,53.1,"33,822",17952.4,hydro,17945.6,0,4.4,2.3,0
+Latvia,y,europe,54.2,"6,425",3481.6,hydro,2530,128,823,0.6,0
+Lebanon,n,asia,2.8,"18,690",523.6,hydro,480,6,10,27.6,0
+Lesotho,n,africa,0,0,508.5,hydro,507.7,0,0,0.8,0
+Liberia,n,africa,0,0,21,hydro,21,0,0,0,0
+Libya,n,africa,0,"36,430",7.8,solar,,0,0,7.8,0
+Lithuania,y,europe,49.4,"4,226",2088,wind,1044,1136,432,66,0
+Luxembourg,y,europe,20.8,"2,196",455.7,hydro,1528,101,139.7,100,0
+North Macedonia,n,europe,36.7,"5,629",2066,hydro,1897,109,36,24,0
+Madagascar,n,africa,0,0,905.8,hydro,886.5,0.5,0.6,18.2,0
+Malawi,n,africa,0,0,1471.8,hydro,1404,0,49.8,18,0
+Malaysia,n,asia,13.7,"156,660",21491.4,hydro,20342,0,917,232.4,0
+Maldives,n,asia,0,0,11.6,solar,0,1.5,0,10.1,0
+Mali,n,africa,0,0,1111.6,hydro,1102.4,0,0,9.2,0
+Malta,n,europe,15.6,856,133.4,solar,0,0.4,8,125,0
+Marshall Islands,n,africa,0,0,2.2,solar,0,0,0,2.2,0
+Martinique,n,africa,0,0,111.9,biomass,0,1.3,28.6,82,0
+Mauritania,n,africa,0,0,343.8,hydro,182.9,104.3,0,56.6,0
+Mauritius,n,africa,21.8,"3,042",663.5,biomass,99.5,18,515.7,30.3,0
+Mayotte,n,africa,0,0,14.8,solar,0,0,0,14.8,0
+Mexico,n,namerica,15.3,"320,353",48937,hydro,30698,10378,1461,252,6148
+Micronesia,n,oceania,0,0,1.8,solar,0,0,0,1.8,0
+Moldova,n,europe,5.3,"5,827",308.7,hydro,290,2.5,14.2,1.9,0
+Mongolia,n,asia,3.9,"5,667",223.1,wind,61,153.6,,8.5,0
+Montenegro,n,europe,58.8,"3,141",1847.1,hydro,1843,,,4.1,0
+Morocco,n,africa,14.8,"32,141",4757,wind,1662.2,3015.2,12.6,473.4,0
+Mozambique,n,africa,83.7,"18,732",15682.6,hydro,15610.6,0,55.2,16.8,0
+Myanmar,n,asia,52.8,"17,867",9436.5,hydro,9400,0,0,36.5,0
+Namibia,n,africa,99.3,"1,421",1410.9,hydro,1359,0.1,0.2,51.6,0
+Nauru,n,africa,0,0,0.2,solar,0,0,0,0.2,0
+Nepal,n,asia,65.5,"4,244",2777.7,hydro,2734.5,0.1,0,43,0
+Netherlands,y,europe,12.1,"115,170",13943,wind,100,8170,4113,1560,0
+New Caledonia,n,oceania,0,,288.9,hydro,231.8,45.1,0.6,11.4,0
+New Zealand,n,oceania,83.9,"43,033",36118,hydro,25730,2303,608,52,7425
+Nicaragua,n,asia,53.3,"4,590",2444.8,biomass,426.7,729,533.2,26.8,729
+Niger,n,africa,2.5,526,13.1,solar,0,0,0,13.1,0
+Nigeria,n,africa,18.6,"30,897",5750,hydro,5721.2,3,0,25.8,0
+Norway,y,europe,97.2,"149,630",145378.9,hydro,144005,2116,233,23.8,0
+Oman,n,asia,0,"34,210",3.7,solar,0,0,0,3.7,0
+Pakistan,n,asia,32.7,"114,003",37248.7,hydro,34366,786.3,1506.1,590.4,0
+Palau,n,asia,0,0,1.7,solar,0,0,0,1.7,0
+Palestine,n,asia,0,0,42.5,solar,0,0,0,42.5,0
+Panama,n,namerica,66.6,"10,886",7255.1,hydro,6522.5,625.2,30.9,76.5,0
+Papua New Guinea,n,samerica,0,0,1288.9,hydro,876.6,0,11,1.3,400
+Paraguay,n,samerica,100,"63,771",63902.3,hydro,63770.2,0,132.1,0,
+Peru,n,samerica,50.1,"51,923",26030.1,hydro,24171.7,1063.8,493.5,301.1,
+Philippines,n,asia,24.3,"90,797",22030.5,hydro,8833,975,777.5,1097,11070
+Poland,y,europe,13.7,"166,635",22807,wind,2622,12588,7955,124,
+Portugal,y,europe,53.5,"60,280",32262,hydro,16909,12474,3071,822,172
+Puerto Rico,n,namerica,0,0,388.9,wind,71,193,7,117.9,
+Qatar,n,asia,0.3,"42,307",123.2,biomass,0,0,114.8,8.4,
+Reunion,n,africa,0,0,1003.7,hydro,464.5,18.5,261.2,259.5,
+Romania,y,europe,41.4,"65,103",26969.1,hydro,18536,6590,531,1820,0.1
+Russia,n,europe,16.9,"1,090,973",184171.6,hydro,185668,6,32,79.3,414
+Rwanda,n,africa,0,0,342.1,hydro,324.6,0,1.9,15.7,
+Samoa,n,oceania,0,0,50,hydro,37.9,1.5,0,10.6,
+Sao Tome & Principe,n,oceania,0,0,6,hydro,5.9,0,0,0.1,
+Saudi Arabia,n,asia,0,"344,809",129.2,solar,0,0,0,129.2,
+Senegal,n,africa,10.4,"4,457",461.4,hydro,359.4,0,15.1,86.9,
+Serbia,n,europe,27.6,"39,342",10865,hydro,11520,26,35,12,
+Seychelles,n,africa,0,0,9.9,solar,0,7,0,2.9,
+Sierra Leone,n,samerica,0,0,220.4,hydro,219.9,0,0,0.4,
+Singapore,n,asia,1.6,"51,667",824.3,biomass,0,0,671.7,152.6,
+Slovakia,y,europe,24.5,"27,064",6629,hydro,4606,6,1731,533,
+Slovenia,y,europe,30.6,"16,500",5057,hydro,4782,6,281,267,
+Solomon Islands,n,oceania,0,0,3.6,solar,0.8,0,0,2.8,
+Somalia,n,africa,0,0,8.6,wind,0,4.9,0,3.7,
+South Africa,n,africa,3.2,"252,747",8074,hydro,3892.5,3697.7,437.3,3340.5,
+South Sudan,n,africa,0.1,439,0.6,solar,,,,0.6,
+Spain,y,europe,38.1,"274,779",104639.3,wind,39865,48906,5689,13649,
+Sri Lanka,n,asia,27.7,"14,284",3949.9,hydro,3506.8,346,37.9,59.3,
+St Kitts and Nevis,n,namerica,0,0,10.7,wind,0,7.6,0,3.1,
+St Lucia,n,namerica,0,0,1.3,solar,0,0,0,1.3,
+St Maarten,n,namerica,0,0,0,solar,0,0,0,,
+St Martin,n,namerica,0,0,2.6,solar,0,0,0,2.6,
+St Vincent & the Grenadines,n,namerica,0,0,26.6,hydro,24.7,0,0,1.9,
+Sudan,n,africa,56.7,"14,429",8182,hydro,8051,0,110.5,20.5,
+Suriname,n,samerica,58.3,"2,022",1178.7,hydro,1163.5,0,6.5,8.8,
+Sweden,y,europe,57.1,"156,010",89127.1,hydro,62137,15479,11487,143,
+Switzerland,n,europe,59.8,"63,175",37809,hydro,36689,109,1743,1333,
+Syria,n,asia,5.3,"18,112",963.5,hydro,929,1.1,33.5,0,
+Tajikistan,n,asia,97.5,"17,232",16800,hydro,16800,0,0,0,
+Tanzania,n,africa,37.1,"6,998",2597.5,hydro,2444.1,0,135.2,18.2,
+Taiwan,n,asia,4.2,"264,136",10973.1,hydro,9855.7,1457.1,1822.6,1132.2,
+Thailand,n,asia,13.1,"191,321",25046.9,biomass,4127.8,345,17672.6,3377,1.3
+Timor Leste,n,asia,0,0,2.3,hydro,1.5,0,0,0.8,
+Togo,n,oceania,73.1,232,169.6,hydro,165.1,0,0,4.4,
+Tokelau,n,oceania,0,0,1.3,solar,0,0,0,1.3,
+Tonga,n,oceania,0,0,4.5,solar,0,0,0,4.5,
+Trinidad and Tobago,n,namerica,0,"10,712",4,solar,0,0,0,4,
+Tunisia,n,africa,3,"19,808",589,wind,45,474,0,70,
+Turkey,n,asia,32.9,"274,408",90248.1,hydro,67231,15517,1635,1046.1,4819
+Turkmenistan,n,asia,0,"22,534",0,solar,0,0,0,0,
+Tuvalu,n,oceania,0,0,2.8,solar,0,0,0,2.8,
+Uganda,n,africa,0,0,3594.3,hydro,3304.5,,252,37.8,
+Ukraine,n,europe,5.6,"164,573",9285.1,hydro,9304,954,169.1,491,
+United Arab Emirates,n,asia,0.3,"129,956",337.3,solar,0,0,6,331.3,
+United Kingdom,y,europe,27.9,"356,021","99,330",wind,"5,928","50,004","31,869","11,525",-
+United States,n,namerica,14.7,"4,322,038",637076,hydro,292113,229471,69017,50334,18584
+US Virgin Islands,n,namerica,0,0,29.5,solar,0,0,0,29.5,
+Uruguay,n,samerica,96.5,"13,238","12,795",hydro,7842.2,2994.3,2432.7,153.1,
+Uzbekistan,n,asia,25.6,"58,319",14901.2,hydro,14896.4,0,0,4.8,
+Vanuatu,n,oceania,0,0,29.9,biomass,7.6,5,11.9,5.4,
+Venezuela,n,samerica,67.6,"112,577",76098.7,hydro,76003.5,88.3,0,6.9,
+Vietnam,n,asia,38.6,"164,832",63654,hydro,63105.1,209.8,332,7,
+Yemen,n,asia,10.9,"5,045",549,solar,0,0,0,549,
+Zambia,n,africa,95,"11,695",11107.8,hydro,11026.6,0,76,5.2,
+Zimbabwe,n,africa,51.9,"7,055",3658.4,hydro,3550.9,0,95.3,12.2,
