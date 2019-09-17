@@ -1,15 +1,14 @@
 queue()
     .defer(d3.csv, "data/js-project.csv")
     .await(makeGraphs);
-    
+   
 function makeGraphs(error, renewableData) {
-    var ndx = crossfilter(renewableData);
- 
- 
     renewableData.forEach(function(d){
-        d.renewable.total = parseInt(d.renewable.total);
+        d.renewable_total = parseInt(d.renewable_total);
     })
+    var ndx = crossfilter(renewableData);
     
+   
     
     show_continent_selector(ndx);
     show_sources_balance(ndx);
@@ -28,7 +27,7 @@ function show_continent_selector(ndx) {
 }
 
 function show_sources_balance(ndx) {
-    var dim = ndx.dimension(dc.pluck('main.renewable'));
+    var dim = ndx.dimension(dc.pluck('main_renewable'));
     var group = dim.group();
     
     dc.barChart("#source-balance")
@@ -50,7 +49,7 @@ function show_average_renewable(ndx) {
 
     function add_item(p, v) {
         p.count++;
-        p.total += v.renewable.total;
+        p.total += v.renewable_total;
         p.average = p.total;
         return p;
     }
@@ -61,7 +60,7 @@ function show_average_renewable(ndx) {
             p.total = 0;
             p.average = 0;
         } else {
-            p.total -= v.renewable.total;
+            p.total -= v.renewable_total;
             p.average = p.total / p.count;
         }
         return p;

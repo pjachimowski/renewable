@@ -1,4 +1,4 @@
-country,eu,continent,renewable.total,all.sources,renewable,main.renewable,hydro,wind,biomass,solar,geothermal
+country,eu,continent,renewable_total,all_sources,renewable,main_renewable,hydro,wind,biomass,solar,geothermal
 Afghanistan,n,asia,0,0,1070.9,hydro,1035.3,0.1,0,35.5,
 Albania,n,europe,100,"7,782",7783.9,hydro,7782,0,0,1.9,
 Algeria,n,africa,0.6,"70,997",430.5,solar,72,19.4,0,339.1,
