@@ -30,41 +30,45 @@
         <p class="logo my-auto">Electricity production from renewable sources</p>
     </nav>
     
-<!-- callout --------------------------------------------------------------------------------------------->
+<!-- navbar --------------------------------------------------------------------------------------------->
    
-   <section class="container-callout container-fluid">
-       <div class="opaque-overlay">&nbsp;</div>
-        <div class="row">
-            <div class="col-12 text-center">
-                <div>
-                    <h1 class="title2">List of countries by electricity production from renewable sources</h1>
-                </div>
-                <div>
-                    <h3 class="title2">This article is a list of countries by electricity generation from renewable sources every year.
-                    Note that most countries import and/or export electricity, so the percentage figures do not reflect the percentage of consumption that is renewable based.
-                    </h3>
-                    <p> another example below</p>
-                    <a class="btn btn-primary" href="example.html" role="button">Link</a>
-                </div>
-            </div>
-        </div>
+  
+    
+   
+  <div class="container">
+<script type="text/javascript" src="header.js"></script>
+<div id="test"></div>
 
-    </section>
-    
-    <div id="source-balance"></div>
-    
-    <div id="continent-selector"></div>
-    
-    <div id="average-renewable"></div>
-    
-    <div id="source-distribution"></div>
-    
-    <div id="percent-resources-africa"></div>
-    <div id="percent-resources-europe"></div>
-    <div id="percent-resources-asia"></div>
-    <div id="percent-resources-namerica"></div>
-    <div id="percent-resources-samerica"></div>
-    <div id="percent-resources-oceania"></div>
+    <script type="text/javascript" src="../js/promise-polyfill.js"></script>
+    <script type="text/javascript" src="../js/fetch.umd.js"></script>
+<script type="text/javascript" src="../js/d3.js"></script>
+<script type="text/javascript" src="../js/crossfilter.js"></script>
+<script type="text/javascript" src="../js/dc.js"></script>
+<script type="text/javascript">
+var chart = dc.pieChart("#test");
+d3.csv("morley.csv").then(function(experiments) {
+  var ndx           = crossfilter(experiments),
+      runDimension  = ndx.dimension(function(d) {return "run-"+d.Run;})
+      speedSumGroup = runDimension.group().reduceSum(function(d) {return d.Speed * d.Run;});
+  chart
+    .width(768)
+    .height(480)
+    .slicesCap(4)
+    .innerRadius(100)
+    .dimension(runDimension)
+    .group(speedSumGroup)
+    .legend(dc.legend())
+    // workaround for #703: not enough data is accessible through .label() to display percentages
+    .on('pretransition', function(chart) {
+        chart.selectAll('text.pie-slice').text(function(d) {
+            return d.data.key + ' ' + dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2*Math.PI) * 100) + '%';
+        })
+    });
+  chart.render();
+});
+</script>
+
+</div>
 
 
 </body>
