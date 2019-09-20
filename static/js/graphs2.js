@@ -67,8 +67,8 @@ function show_council_votes(ndx) {
         .height(200)
         .slicesCap(37)
         .innerRadius(10)
-        .dimension('country')
-        .group('council_votes')
+        .dimension(dim)
+        .group(group)
         .renderLabel(true);
 }
 

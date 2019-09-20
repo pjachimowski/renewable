@@ -1,5 +1,6 @@
-html, body { 
-    overflow-x: hidden; 
+html,
+body {
+    overflow-x: hidden;
 }
 
 body {
@@ -7,19 +8,19 @@ body {
 }
 
 /*------- navbar ---------------*/
+
+.home {
+    color: white;
+    font-size: large;
+    margin: 15px 15px 15px 15px;
+}
+
 .mynavbar {
-    background-color: gray;
+    background-image: linear-gradient(to bottom right, #000B9F, #0011FF);
     position: relative;
     min-height: 50px;
     margin-bottom: 0px;
-    border: 1px solid transparent;
-}
 
-.logo {
-    color: white;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
 }
 
 /*------- callout -----------*/
@@ -47,8 +48,46 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.title1 {
+    color: white;
+    text-transform: uppercase;
+
+}
+
 .title2 {
-    margin: 10px 350px 15px 350px;
+    font-size: medium;
+    text-transform: uppercase;
+    margin: 10px 50px 15px 50px;
     display: block;
     color: white;
+}
+
+.title3 {
+    font-size: medium;
+    font-style: italic;
+    margin: 10px 50px 15px 50px;
+    display: block;
+    color: white;
+}
+/* ----------- charts cointainers --------*/
+
+.chart1 {
+    display: block;
+    margin: 15px 10px 25px 10px;
+}
+
+
+
+
+/* ---------- footer ---------*/
+
+.footer {
+    background-image: linear-gradient(to bottom right, #0011FF, #000B9F);
+    min-height: 150px;
+    margin-bottom: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
 }
