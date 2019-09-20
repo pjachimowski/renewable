@@ -69,6 +69,27 @@ body {
     display: block;
     color: white;
 }
+/*---------- intro ----------*/
+
+.container-callout-2 {
+    height: 50vh;
+    margin-bottom: 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.devider {
+    color: blue;
+    font-size: large;
+    margin: 10px;
+}
+
 /* ----------- charts cointainers --------*/
 
 .chart1 {
@@ -84,10 +105,12 @@ body {
 .footer {
     background-image: linear-gradient(to bottom right, #0011FF, #000B9F);
     min-height: 150px;
-    margin-bottom: 0px;
-    left: 0;
-    bottom: 0;
     width: 100%;
     color: white;
-    text-align: center;
+    position: relative;
+}
+
+.author {
+    font-size: large;
+    padding: 20px 40px 10px 20px;
 }
