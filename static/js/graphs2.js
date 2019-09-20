@@ -10,7 +10,7 @@ function makeGraphs(error, statesData) {
 
     // pie charts
 
-    // show_council_votes(ndx);
+    show_council_votes(ndx);
     // show_parliament_seats(ndx);
 
     dc.renderAll();
@@ -57,6 +57,25 @@ function show_year_accession(ndx) {
 }
 
 /* ----- show_council_votes ------------*/
+
+function show_council_votes(ndx) {
+    var dim = ndx.dimension(dc.pluck('council_votes'));
+    var group = dim.group();
+
+    dc.pieChart("#council_votes")
+        .width(200)
+        .height(200)
+        .slicesCap(37)
+        .innerRadius(10)
+        .dimension('country')
+        .group('council_votes')
+        .renderLabel(true);
+}
+
+
+
+
+
 /*
 
 var pieChart = dc.pieChart('#council_votes');
