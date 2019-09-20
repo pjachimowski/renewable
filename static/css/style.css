@@ -90,6 +90,10 @@ body {
     margin: 10px;
 }
 
+.text2 {
+    color: gray;
+}
+
 /* ----------- charts cointainers --------*/
 
 .chart1 {
@@ -97,8 +101,18 @@ body {
     margin: 15px 10px 25px 10px;
 }
 
+.card-styling {
+    background-color: #F0F0F0;
+    border-radius: 35px 0px 0px 35px;
+}
 
+.charts {
+    margin: 20px;
+}
 
+.about-charts {
+    text-align: center;
+}
 
 /* ---------- footer ---------*/
 

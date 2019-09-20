@@ -59,17 +59,25 @@ function show_year_accession(ndx) {
 /* ----- show_council_votes ------------*/
 
 function show_council_votes(ndx) {
-    var dim = ndx.dimension(dc.pluck('council_votes'));
-    var group = dim.group();
+    var dim = ndx.dimension(d => d.country);
+    var group = dim.group().reduceSum(d => d.council_votes);
 
     dc.pieChart("#council_votes")
-        .width(200)
-        .height(200)
+        .height(400)
+        .width(400)
+        .radius(150)
         .slicesCap(37)
-        .innerRadius(10)
+        .innerRadius(50)
         .dimension(dim)
         .group(group)
-        .renderLabel(true);
+        .renderLabel(true)
+        .drawPaths(true)
+        .externalLabels(8)
+        .on('pretransition', function(chart) {
+            chart.selectAll('text.pie-slice').text(function(d) {
+               return d.data.key + ': ' + d.data.value;
+           });
+        });
 }
 
 
