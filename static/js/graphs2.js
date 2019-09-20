@@ -11,7 +11,7 @@ function makeGraphs(error, statesData) {
     // pie charts
 
     show_council_votes(ndx);
-    // show_parliament_seats(ndx);
+    show_parliament_seats(ndx);
 
     dc.renderAll();
 }
@@ -33,7 +33,7 @@ function show_members_balance(ndx) {
         .xUnits(dc.units.ordinal)
         .elasticY(true)
         .xAxisLabel("Countries in Europe")
-        .yAxis().ticks(20);
+        .yAxis().ticks(10);
 }
 
 /* ------ show_year_accession --------*/
@@ -71,42 +71,42 @@ function show_council_votes(ndx) {
         .dimension(dim)
         .group(group)
         .renderLabel(true)
-        .drawPaths(true)
-        .externalLabels(8)
+        .drawPaths(false)
+        .externalLabels(-2)
         .on('pretransition', function(chart) {
             chart.selectAll('text.pie-slice').text(function(d) {
-               return d.data.key + ': ' + d.data.value;
-           });
+                if (d.data.value > 13) {
+                    return d.data.key + ': ' + d.data.value;
+                }
+                return "";
+            });
         });
 }
 
 
+/* ------- show_parliament_seats -------*/
 
+function show_parliament_seats(ndx) {
+    var dim = ndx.dimension(d => d.country);
+    var group = dim.group().reduceSum(d => d.parliament_seats);
 
-
-/*
-
-var pieChart = dc.pieChart('#council_votes');
-// d3.csv("data/.csv", function(errors, people) {
-// console.log(people);
-// var mycrossfilter = crossfilter(people);
-
-var councilDimension = mycrossfilter.dimension(function(data) {
-    return data.council_votes;
-});
-var councilGroup = councilDimension.group().reduceCount();
-
-pieChart
-    .width(800)
-    .height(300)
-    .dimension(councilDimension)
-    .group(councilGroup)
-    .on('renderlet', function(chart) {
-        chart.selectAll('rect').on('click', function(d) {
-            console.log('click!', d);
+    dc.pieChart("#parliament-seats")
+        .height(400)
+        .width(400)
+        .radius(150)
+        .slicesCap(37)
+        .innerRadius(80)
+        .dimension(dim)
+        .group(group)
+        .renderLabel(true)
+        .drawPaths(false)
+        .externalLabels(-10)
+        .on('pretransition', function(chart) {
+            chart.selectAll('text.pie-slice').text(function(d) {
+                if (d.data.value > 20) {
+                    return d.data.key + ': ' + d.data.value;
+                }
+                return "";
+            });
         });
-    });
-    
-    
-*/
-/* ----- show_parliament_seats ------------*/
+}

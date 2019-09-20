@@ -98,20 +98,40 @@ body {
 
 .chart1 {
     display: block;
-    margin: 15px 10px 25px 10px;
+    margin: 15px 10px 100px 10px;
 }
 
 .card-styling {
     background-color: #F0F0F0;
     border-radius: 35px 0px 0px 35px;
+
 }
 
-.charts {
-    margin: 20px;
+.card-stylingl {
+    background-color: #F0F0F0;
+    border-radius: 0px 35px 35px 0px;
+    
+}
+
+.charts-r {
+    margin: 20px 20px 20px 100px;
+    align-items: center;
+}
+
+.charts-l {
+    margin: 20px 20px 20px 100px;
+    align-items: center;
 }
 
 .about-charts {
     text-align: center;
+    padding: 0px 40px 0px 40px;
+    font-size: medium;
+}
+
+.about-charts-img {
+    height: 100px;
+    margin: 40px 0px 20px 0px;
 }
 
 /* ---------- footer ---------*/
@@ -126,5 +146,14 @@ body {
 
 .author {
     font-size: large;
-    padding: 20px 40px 10px 20px;
+    padding: 20px 40px 0px 20px;
+}
+
+.stay-connected {
+    font-size: large;
+    padding: 5px 40px 0px 20px;
+}
+
+.fa-instagram {
+    font-size: large;
 }
