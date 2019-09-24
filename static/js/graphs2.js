@@ -13,6 +13,8 @@ function makeGraphs(error, statesData) {
     show_council_votes(ndx);
     show_parliament_seats(ndx);
 
+    show_gdp_per_year(ndx);
+
     dc.renderAll();
 }
 
@@ -110,3 +112,42 @@ function show_parliament_seats(ndx) {
             });
         });
 }
+
+/* -------- show_gdp_per_year -------------------------- */
+
+            
+    function show_gdp_per_year(ndx) {
+        var dim = ndx.dimension(dc.pluck("country"));
+        var groupCouncilVotes = dim.group().reduceSum(d => d.council_votes);
+        var groupParliamentSeats = dim.group().reduceSum(d => d.parliament_seats);
+
+        var composite = dc.compositeChart("#gdp-per-year");
+
+        composite
+            .width(900)
+            .height(400)
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal)
+            .group(groupCouncilVotes)
+            .yAxisLabel("The Y Axis")
+            .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
+            .renderHorizontalGridLines(true)
+            .margins({left: 0, top: 0, right: 10, bottom: 80})
+            .compose([
+                dc.lineChart(composite)
+                    .dimension(dim)
+                    .colors('red')
+                    .group(groupCouncilVotes, "Council votes"),
+                dc.lineChart(composite)
+                    .dimension(dim)
+                    .colors('blue')
+                    .group(groupParliamentSeats, "Parliament seats")
+            ])
+            .brushOn(false)
+            .renderlet(function(chart){
+                chart.selectAll("g.x text")
+                    .attr('transform', "rotate(-65)")
+                    .attr('x', -35);
+            });
+    }
+
