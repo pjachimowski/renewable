@@ -115,39 +115,43 @@ function show_parliament_seats(ndx) {
 
 /* -------- show_gdp_per_year -------------------------- */
 
-            
-    function show_gdp_per_year(ndx) {
-        var dim = ndx.dimension(dc.pluck("country"));
-        var groupCouncilVotes = dim.group().reduceSum(d => d.council_votes);
-        var groupParliamentSeats = dim.group().reduceSum(d => d.parliament_seats);
 
-        var composite = dc.compositeChart("#gdp-per-year");
+function show_gdp_per_year(ndx) {
+    var year_dim = ndx.dimension(dc.pluck('date'));
+    function gdp_per_country(country) {
+            return function(d) {
+                if (d.country === country) {
+                    return 1; // something is wrong with "1"
+                } else {
+                    return 0;
+                }
+            }
+        }
+    var albania_gdp = year_dim.group().reduceSum(gdp_per_country('Albania'));
+    var austria_gdp = year_dim.group().reduceSum(gdp_per_country('Austria'));
+    var belgium_gdp = year_dim.group().reduceSum(gdp_per_country('Belgium'));
 
-        composite
-            .width(900)
-            .height(400)
-            .x(d3.scale.ordinal())
-            .xUnits(dc.units.ordinal)
-            .group(groupCouncilVotes)
-            .yAxisLabel("The Y Axis")
-            .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
-            .renderHorizontalGridLines(true)
-            .margins({left: 0, top: 0, right: 10, bottom: 80})
-            .compose([
-                dc.lineChart(composite)
-                    .dimension(dim)
-                    .colors('red')
-                    .group(groupCouncilVotes, "Council votes"),
-                dc.lineChart(composite)
-                    .dimension(dim)
-                    .colors('blue')
-                    .group(groupParliamentSeats, "Parliament seats")
-            ])
-            .brushOn(false)
-            .renderlet(function(chart){
-                chart.selectAll("g.x text")
-                    .attr('transform', "rotate(-65)")
-                    .attr('x', -35);
-            });
-    }
+    var compositeChart = dc.compositeChart("#gdp-per-year");
 
+    compositeChart
+        .width(990)
+        .height(200)
+        .dimension(year_dim)
+        .x(d3.time.scale().domain())
+        .yAxisLabel("year")
+        .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
+        .renderHorizontalGridLines(true)
+        .compose([
+            dc.lineChart(compositeChart)
+            .colors('green')
+            .group(albania_gdp, 'Albania'),
+            dc.lineChart(compositeChart)
+            .colors('red')
+            .group(austria_gdp, 'Austria'),
+            dc.lineChart(compositeChart)
+            .colors('blue')
+            .group(belgium_gdp, 'Belgium')
+        ])
+        .brushOn(false)
+        .render();
+}
