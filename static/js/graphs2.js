@@ -113,45 +113,26 @@ function show_parliament_seats(ndx) {
         });
 }
 
-/* -------- show_gdp_per_year -------------------------- */
-
+/* -----------------show_gdp_per_year -----------------------*/
 
 function show_gdp_per_year(ndx) {
-    var year_dim = ndx.dimension(dc.pluck('date'));
-    function gdp_per_country(country) {
-            return function(d) {
-                if (d.country === country) {
-                    return 1; // something is wrong with "1"
-                } else {
-                    return 0;
-                }
-            }
-        }
-    var albania_gdp = year_dim.group().reduceSum(gdp_per_country('Albania'));
-    var austria_gdp = year_dim.group().reduceSum(gdp_per_country('Austria'));
-    var belgium_gdp = year_dim.group().reduceSum(gdp_per_country('Belgium'));
+    var dim = ndx.dimension(dc.pluck("country"));
+    var group2010 = dim.group().reduceSum(dc.pluck("2010"));
+    var group2011 = dim.group().reduceSum(dc.pluck("2011"));
+    var group2012 = dim.group().reduceSum(dc.pluck("2012"));
+    var group2013 = dim.group().reduceSum(dc.pluck("2013"));
+    var group2014 = dim.group().reduceSum(dc.pluck("2014"));
 
-    var compositeChart = dc.compositeChart("#gdp-per-year");
+    var gdpChart = dc.lineChart("#gdp-per-year");
 
-    compositeChart
-        .width(990)
-        .height(200)
-        .dimension(year_dim)
-        .x(d3.time.scale().domain())
-        .yAxisLabel("year")
-        .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
-        .renderHorizontalGridLines(true)
-        .compose([
-            dc.lineChart(compositeChart)
-            .colors('green')
-            .group(albania_gdp, 'Albania'),
-            dc.lineChart(compositeChart)
-            .colors('red')
-            .group(austria_gdp, 'Austria'),
-            dc.lineChart(compositeChart)
-            .colors('blue')
-            .group(belgium_gdp, 'Belgium')
-        ])
-        .brushOn(false)
-        .render();
+        gdpChart
+                .width(990)
+                .height(400)
+                .renderArea(true)
+                .dimension(dim)
+                .group(2011)
+                .stack(2012)
+                .stack(2013)
+                .x(d3.scale.ordinal());
 }
+

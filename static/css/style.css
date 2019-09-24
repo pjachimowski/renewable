@@ -89,6 +89,20 @@ body {
     margin-bottom: 50px;
 }
 
+.container-callout2 {
+    height: 100vh;
+    background: url("../../assets/blue-2806_1920.jpg") no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
 .opaque-overlay {
     position: absolute;
     top: 0;
