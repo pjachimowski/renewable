@@ -16,7 +16,12 @@ function makeGraphs(error, statesData) {
     show_parliament_seats(ndx);
 
     show_gdp_per_country();
-
+    
+    //2nd page
+    
+  // show_year_accession2(ndx);
+   // show_density(ndx) 
+    // show_area(ndx);
 
     dc.renderAll();
 }
@@ -115,8 +120,68 @@ function show_parliament_seats(ndx) {
             });
         });
 }
+/* -----------------------population -------------------------*/
+/*
+function show_year_accession2(ndx) {
+    var dim = ndx.dimension(dc.pluck('Accession_Year'));
+    var group = dim.group();
 
+    dc.barChart("#year_accession2")
+        .width(400)
+        .height(300)
+        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+        .dimension(dim)
+        .group(group)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .elasticY(true)
+        .xAxisLabel("Countries in Europe")
+        .yAxis().ticks(5);
+} */
+
+/* ----------------------- density -------------------------*/
+/*
+function show_density(ndx) {
+    var dim = ndx.dimension(dc.pluck('Accession_Year'));
+    var group = dim.group();
+
+    dc.barChart("#year_accession")
+        .width(400)
+        .height(300)
+        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+        .dimension(dim)
+        .group(group)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .elasticY(true)
+        .xAxisLabel("Countries in Europe")
+        .yAxis().ticks(5);
+}
+
+/* ----------------------- area-------------------------*/
+/*
+function show_area(ndx) {
+    var dim = ndx.dimension(dc.pluck('Accession_Year'));
+    var group = dim.group();
+
+    dc.barChart("#year_accession")
+        .width(400)
+        .height(300)
+        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+        .dimension(dim)
+        .group(group)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .elasticY(true)
+        .xAxisLabel("Countries in Europe")
+        .yAxis().ticks(5);
+}
+*/
 /* ----------------- show_gdp_per_country -----------------------*/
+
 
 function show_gdp_per_country() {
     // append the svg object to the body of the page
@@ -130,7 +195,6 @@ function show_gdp_per_country() {
 
     // Read data
     d3.csv("https://raw.githubusercontent.com/pjachimowski/renewable/master/data/states.csv", function(data) {
-    })
             // Filter a bit the data -> more than 1 million inhabitants
             //data = data.filter(function(d) { return d.GDP_eur > 9000 })
             var data = data.filter(function(d) { return d.GDP_eur > 9000 });
@@ -163,7 +227,7 @@ function show_gdp_per_country() {
             }
             var mousemove = function(d) {
                 Tooltip
-                    .html('<u>' + d.key + '</u>' + "<br>" + d.GDP_eur + " GDP")
+                    .html('<u>' + d.key + '</u>' + "<br>" + d.GDP_eur + "GDP")
                     .style("left", (d3.mouse(this)[0] + 20) + "px")
                     .style("top", (d3.mouse(this)[1]) + "px")
             }
@@ -227,4 +291,4 @@ function show_gdp_per_country() {
                 d.fx = null;
                 d.fy = null;
             }
-}
+})
