@@ -190,11 +190,11 @@ d3.csv("https://raw.githubusercontent.com/pjachimowski/renewable/master/data/sta
             .on("mouseover", mouseover) // What to do when hovered
             .on("mousemove", mousemove)
             .on("mouseleave", mouseleave)
-/*
-            //.call(d3.drag() // call specific function when circle is dragged
-            //   .on("start", dragstarted)
-            //   .on("drag", dragged)
-            //    .on("end", dragended));
+
+            .call(d3.drag() // call specific function when circle is dragged
+               .on("start", dragstarted)
+               .on("drag", dragged)
+                .on("end", dragended));
 
         // Features of the forces applied to the nodes:
         var simulation = d3.forceSimulation()
@@ -229,9 +229,6 @@ d3.csv("https://raw.githubusercontent.com/pjachimowski/renewable/master/data/sta
             d.fx = null;
             d.fy = null;
         }
-        
-        */
-        
-        
+
     });
 }
