@@ -50,6 +50,7 @@ Better content of each section
 - Bootstrap (https://getbootstrap.com/)
 - Fontawesome (https://fontawesome.com/)
 - javascript
+- JavaScript libraries
 - dc.js
 - d3.js
 - d3-scale-chromatic
