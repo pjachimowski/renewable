@@ -129,18 +129,18 @@ function show_gdp_per_country(ndx) {
     var height = 460
 
     // Read data
-    // d3.csv("https://github.com/pjachimowski/renewable/blob/master/data/states.csv", function(data) {
+     // d3.csv("https://github.com/pjachimowski/renewable/blob/master/data/states.csv", function(ndx) {
 
         // Filter a bit the data -> more than 1 million inhabitants
-        data = data.filter(function(d) { return d.GDP_eur > 9000 })
+        var data = data.filter(function(d) { return d.GDP_eur > 9000 })
 
         // Color palette for continents?
-        var color = d3.scaleOrdinal()
+        var color = d3.scale.ordinal()
             .domain(["Candidate", "Member", "Non member"])
             .range(d3.schemeSet1);
 
         // Size scale for countries
-        var size = d3.scaleLinear()
+        var size = d3.scale.linear()
             .domain([0, 1400000000])
             .range([7, 55]) // circle will be between 7 and 55 px wide
 
@@ -174,7 +174,7 @@ function show_gdp_per_country(ndx) {
         // Initialize the circle: all located at the center of the svg area
         var node = svg.append("g")
             .selectAll("circle")
-            .data(data)
+            .ndx(ndx)
             .enter()
             .append("circle")
             .attr("class", "node")
@@ -226,4 +226,4 @@ function show_gdp_per_country(ndx) {
             d.fx = null;
             d.fy = null;
         }
-    }
+    })
