@@ -226,4 +226,4 @@ function show_gdp_per_country(ndx) {
             d.fx = null;
             d.fy = null;
         }
-    })
+    }
