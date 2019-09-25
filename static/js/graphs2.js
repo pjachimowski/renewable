@@ -227,3 +227,4 @@ function show_gdp_per_country() {
                 d.fx = null;
                 d.fy = null;
             }
+}
