@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Akronim|Raleway" rel="stylesheet">
 
-
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script type="text/javascript" src="static/js/d3.min.js"></script>
     <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
     <script type="text/javascript" src="static/js/dc.min.js"></script>
@@ -165,16 +166,30 @@
                 </div>
             </div>
         </div>
+
+        <!------- circular packing ------- -->
+
+
+        <div class="row chart1">
+            <div class="col-12 card-stylingl">
+                <div class="charts-l" id="gdp-per-country">
+                    <style>
+                        .node:hover {
+                            stroke-width: 7px !important;
+                            opacity: 1 !important;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+
+
+
+
     </section>
 
 
 
-
-    <div class="row">
-        <dic class="col-2"></dic>
-        <div class="col-8" id="gdp-per-year"></div>
-        <dic class="col-2"></dic>
-    </div>
 
 
 
