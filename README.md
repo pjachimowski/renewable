@@ -64,6 +64,11 @@ Better content of each section
 ## Credits
 
 ### Content
+
+Data and data set (csv file):
+https://www.kaggle.com/eurostat/european-union
+
+
 Most of the content was copied/edited from 
 (https://en.wikipedia.org/wiki/Economy_of_the_European_Union)
 (https://en.wikipedia.org/wiki/List_of_sovereign_states_in_Europe_by_GDP_(nominal))

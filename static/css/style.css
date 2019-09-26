@@ -120,6 +120,12 @@ body {
     display: block;
     color: white;
 }
+
+.title-4 {
+    margin: 10px 60px 15px 60px;
+    align-items: center;
+    justify-content: center;
+}
 /*---------- intro ----------*/
 
 .container-callout-2 {

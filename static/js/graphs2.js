@@ -158,6 +158,7 @@ function  show_population_chart(ndx) {
         .xUnits(dc.units.ordinal)
         .elasticY(true)
         .xAxisLabel("Countries in Europe")
+         .yAxisLabel("Population")
         .yAxis().ticks(15)
 }
 /* ------- show_Population_Density_chart -------*/
@@ -177,6 +178,7 @@ function  show_population_density_chart(ndx) {
         .xUnits(dc.units.ordinal)
         .elasticY(true)
         .xAxisLabel("Countries in Europe")
+        .yAxisLabel("people per square mile")
         .yAxis().ticks(15)
 }
 
@@ -198,6 +200,7 @@ function  show_area_chart(ndx) {
         .xUnits(dc.units.ordinal)
         .elasticY(true)
         .xAxisLabel("Countries in Europe")
+        .yAxisLabel("Area in km² ")
         .yAxis().ticks(15)
 }
 
