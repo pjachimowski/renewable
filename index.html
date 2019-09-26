@@ -23,26 +23,31 @@
     <script type="text/javascript" src="static/js/dc.min.js"></script>
     <script type="text/javascript" src="static/js/queue.min.js"></script>
     <script type="text/javascript" src="static/js/graphs2.js"></script>
-    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-    <script src="https://d3js.org/d3.v4.js"></script>
 
 </head>
 
 <body>
+    <!------ anchor for back-to-top-btn -->
+    <a name="top"></a>
+
 
     <!-- navbar --------------------------------------------------------------------------------------------->
 
     <nav class="mynavbar navbar-expand-sm">
         <div>
-            <a href="`">
+            <a href="/index.html">
                 <p class="fas fa-home home"></p>
             </a>
         </div>
     </nav>
-    <!---- reset button ---------------------------------------------------------------->
+
+
+
+
+    <!---- reset button -------------------------------------
 
     <button id="reset-btn" class="resetbtn" href="#"><i class="fas fa-redo-alt"></i></button>
-
+    --------------------------->
     <!-- callout --------------------------------------------------------------------------------------------->
 
     <section class="container-callout container-fluid">
@@ -103,7 +108,6 @@
                     <p></p>The Treaty on the European Union states that any European country may apply for membership if it respects the democratic values of the EU. The first step is for the country to meet the key criteria for accession. These were defined
                     in Copenhagen in 1993 and are hence referred to as 'Copenhagen criteria'.
                     </p>
-                    <a class="btn btn-primary" href="2.html" role="button">read more</a>
                 </div>
             </div>
             <div class="col-6 card-styling">
@@ -125,7 +129,6 @@
                     <p></p>Through successive enlargements, the European Union has grown from the six founding states (Belgium, France, West Germany, Italy, Luxembourg, and the Netherlands) to the current 28. There are six countries that are recognised as
                     candidates for membership: Albania, Iceland, North Macedonia, Montenegro, Serbia, and Turkey.
                     </p>
-                    <button type="button" class="btn btn-primary">read more</button>
                 </div>
                 <div class="col-1">
                 </div>
@@ -144,7 +147,6 @@
                     <p></p>The European Council is a collective body that defines the European Union's overall political direction and priorities. It comprises the heads of state or government of the EU member states, along with the President of the European
                     Council and the President of the European Commission.
                     </p>
-                    <button type="button" class="btn btn-primary">read more</button>
                 </div>
             </div>
             <div class="col-6 card-styling">
@@ -166,45 +168,97 @@
                     <p></p>The European Parliament (EP) is the legislative branch of the European Union and one of its seven institutions. Together with the Council of the European Union, it adopts European legislation, normally on a proposal from the European
                     Commission.
                     </p>
-                    <button type="button" class="btn btn-primary">read more</button>
                 </div>
                 <div class="col-1">
                 </div>
             </div>
         </div>
 
-        <!------- circular packing ------>
 
 
-        <div class="row chart1">
-            <div class="col-12 card-stylingl">
-                <div class="charts-l" id="gdp-per-country">
+        <section class="container-callout-2">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 intro text-center">
+                    <div>
+                        <h2>More data about European countries</h2>
+                    </div>
+                    <i class="fas fa-globe-europe devider"></i>
+                    <div>
+                        <h4 class="text2">
+                            There are 44 countries in Europe today, according to the United Nations. Every one of them is shown in the charts below, with current population and population density and the size of the country (are in square meters). [based on the
+                            <a
+                                href="https://unstats.un.org/home/">United Nations </a>official statistics]
+                        </h4>
+                    </div>
                 </div>
+                <div class="col-2"></div>
+            </div>
+
+        </section>
+        <!------------------selector ---------------------------------------->
+        <div class="row chart3">
+            <div class="col-1">
+            </div>
+            <div class="col-10 card-styling-3" id="selector">
+                <div class="selecter-in">You can select EU or Non EU countries here</div>
+                </div>
+            <div class="col-1">
             </div>
         </div>
 
+        <!------------------ Population ---------------------------------------------->
 
+        <div class="row chart3">
+            <div class="col-1">
+            </div>
 
+            <div class="col-10 card-styling-3">
+                <div class="charts-r text-rotate" id="population-chart">
+                </div>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+
+        <!------------------ Population Density ---------------------------------------------->
+
+        <div class="row chart3">
+            <div class="col-1">
+            </div>
+
+            <div class="col-10 card-styling-3">
+                <div class="charts-r text-rotate" id="population-density-chart">
+                </div>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+
+        <!------------------ Area chart  ---------------------------------------->
+
+        <div class="row chart3">
+            <div class="col-1">
+            </div>
+
+            <div class="col-10 card-styling-3">
+                <div class="charts-r text-rotate" id="area-chart">
+                </div>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
 
     </section>
 
-
-
-
-
-
-
-    <!----- back to the top ----------------------->
-
-
+    <!------------------ Back to top ---------------------------------------------->
     <div class="row">
-        <div class="col-12">
-            <div class="go-up-btn">
-                <button type="button" href="#back-to-top" class="btn btn-primary">GO UP</button>
-            </div>
+        <div class="col-12 go-up-btn">
+
+            <a class="btn btn-primary" href="#top">Back to top</a>
+
         </div>
     </div>
-
 
 
     <footer class="">
